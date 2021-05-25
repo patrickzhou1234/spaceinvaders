@@ -1,0 +1,118 @@
+html {
+  overflow: hidden;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+p {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+#restart {
+  color: red;
+  font-size: 5vw;
+  text-align: center;
+  animation: restart 1s infinite linear;
+  display: none;
+}
+
+#toplvlscore {
+  margin: 0px;
+  color: red;
+  font-size: 2vw;
+}
+
+#toplvlhealth {
+  margin: 0px;
+  color: red;
+  font-size: 2vw;
+}
+
+#dead {
+  position: absolute;
+  font-size: 20vw;
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+#character {
+  width: 20vh;
+  height: 20vh;
+  position: absolute;
+  top: 80vh;
+  left: 0px;
+}
+
+#background-image {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bullet {
+  left: 0px;
+  top: 60vh;
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  animation: bulletmove 0.3s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#bullet {
+  left: 0px;
+  top: 100vh;
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+}
+
+#alien {
+  display: none;
+  position: absolute;
+  left: 40vw;
+  width: 20vh;
+  height: 20vh;
+}
+
+.enemy {
+  top: 0vh;
+  position: absolute;
+  left: 0px;
+  width: 20vh;
+  height: 20vh;
+  animation: enemymove 2.9s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes enemymove {
+  0% {top: 0vh;}
+  100% {top: 80vh;}
+}
+
+@keyframes bulletmove {
+  0% {top: 60vh;}
+  100% {top: -1vh;}
+}
+
+@keyframes restart {
+  50% {opacity: 0;}
+}
