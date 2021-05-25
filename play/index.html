@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html onclick="shoot()" onkeydown="move(event)">
+  <head>
+    <link rel='shortcut icon' type='image/x-icon' href='https://rb.gy/9iqpc9'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Space Invaders</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img id="character" src="https://rb.gy/xca03n">
+    <img id="background-image" src="https://rb.gy/oqqvis">
+    <img id="alien" src="https://rb.gy/gcxklq">
+    <img id="bullet" src="https://rb.gy/5ef1ta">
+    <p id="dead">Game Over</p>
+    <p id="toplvlhealth">Health: <span id="health">20</span></p>
+    <p id="toplvlscore">Score: <span id="score">0</span></p>
+    <p id="restart">Press Enter to Restart</p>
+    <audio id="lasershoot" src="lasergun.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
